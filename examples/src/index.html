@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>voiceout Example</title>
+    </head>
+    <body>
+        <script src="../../lib/index.global.js"></script>
+        <script>
+            const { start, stop } = window.voiceout.transcribe({
+                apiToken: 'API_TOKEN_HERE',
+                languageCode: 'de-DE',
+                mediaSampleRateHertz: 44100,
+                onStarted: () => {
+                    console.log('onStarted');
+                    document.getElementById('start').disabled = 'disabled';
+                    document.getElementById('stop').disabled = '';
+                },
+                onStopped: (text) => {
+                    console.log('onStopped', text);
+                    document.getElementById('start').disabled = '';
+                    document.getElementById('stop').disabled = 'disabled';
+                    document.getElementById('text').value = text;
+                },
+                onChange: (text) => {
+                    console.log('onChange', text);
+                    document.getElementById('text').value = text;
+                },
+                onError: (error) => {
+                    console.log('onError', error);
+                    document.getElementById('start').disabled = '';
+                    document.getElementById('stop').disabled = 'disabled';
+                    document.getElementById('text').value = error;
+                }
+            });
+        </script>
+        <textarea id="text" readonly="readonly" disabled="disabled" rows="5"></textarea>
+        <p>
+            <button id="start" onclick="start()">START</button>
+            <button id="stop" onclick="stop()">STOP</button>
+        </p>
+    </body>
+</html>
