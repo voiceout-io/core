@@ -1,10 +1,10 @@
 {
     "name": "@voiceout/core",
-    "description": "Speech-to-Text as easy as it goes",
+    "description": "Voice-to-Text as easy as it goes",
     "keywords": [
         "transcribe",
-        "speech to text",
-        "voice to text"
+        "voice to text",
+        "speech to text"
     ],
     "license": "MIT",
     "author": "Maik Schmidt <maik.schmidt.hl@gmail.com>",

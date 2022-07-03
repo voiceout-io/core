@@ -1,4 +1,4 @@
-# core - Speech-to-Text as easy as it goes
+# core - Voice-to-Text as easy as it goes
 
 ![](https://img.shields.io/npm/v/@voiceout/core/latest)
 ![](https://github.com/voiceout-io/core/workflows/Release/badge.svg)
