@@ -14,6 +14,8 @@ With [voiceout](https://voiceout.io/) you can integrate Voice-to-Text directly i
 
 Visit [console.voiceout.io](https://console.voiceout.io/) and create an account for free to get an API Key.
 
+Hint: [Check this CodeSandbox to see voiceout in action](https://codesandbox.io/s/optimistic-einstein-gt2ni9?file=/src/index.js:107-137) (do not forget to add your API Key)
+
 ### Step 2: Install SDK
 
 ```bash
