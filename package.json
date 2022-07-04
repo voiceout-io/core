@@ -37,7 +37,7 @@
         "microphone-stream": "6.0.1"
     },
     "devDependencies": {
-        "@commitlint/cli": "16.2.3",
+        "@commitlint/cli": "17.0.3",
         "@commitlint/config-conventional": "16.2.1",
         "@esbuild-plugins/node-globals-polyfill": "0.1.1",
         "@esbuild-plugins/node-modules-polyfill": "0.1.4",
